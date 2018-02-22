@@ -1,6 +1,5 @@
 # Docdash (One Dark)
 
-A clean, responsive documentation template theme for JSDoc 3.
 Layout Overwrite inspired by Material One Dark.
 
 ## Original
