@@ -1,0 +1,110 @@
+/**
+ * docdashQ Layout Overwrite
+ * (inspired by Material One Dark)
+ * by Tim Strecker
+ */
+
+/** Variables **/
+:root {
+	--primary: hsl(224, 12%, 18%);
+	--secondary: hsl(200, 18%, 26%);
+	--font: hsl(0, 0%, 87%);
+	--highlight: hsl(28, 57%, 59%);
+	--smooth: hsl(207, 1%, 60%);
+}
+
+/** Layout Overwrite **/
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a:hover,
+a:active,
+nav > h2 > a:hover,
+.params td,
+.params .name,
+.props .name,
+.name code,
+.prettyprint.source {
+	color: var(--font) !important;
+}
+
+nav,
+h4.name {
+	background-color: var(--secondary);
+	box-shadow: none;
+	border: none;
+}
+
+body,
+section,
+tt,
+code,
+kbd,
+samp,
+.params thead tr,
+.props thead tr,
+.params,
+.params td,
+.props,
+.prettyprint.linenums li,
+.prettyprint.source {
+	background-color: var(--primary) !important;
+	border-color: var(--secondary) !important;
+}
+
+a,
+.signature,
+.type-signature,
+span.param-type,
+.params td .param-type,
+.param-type dd {
+	color: var(--highlight) !important;
+	border: none !important;
+	transition: all 0.3s;
+}
+
+footer,
+nav ul ul a,
+nav > h2 > a {
+	color: var(--smooth) !important;
+	border: none;
+}
+
+/** Editor Overwrite **/
+.kwd {
+  color: hsl(286, 60%, 67%);
+}
+
+.pun {
+  color: hsl(212, 17%, 70%);
+}
+
+.pln {
+  color: hsl(355, 65%, 65%);
+}
+
+.lit {
+  color: hsl(28, 57%, 59%);
+}
+
+.str {
+  color: hsl(101, 38%, 62%);
+}
+
+.typ {
+  color: hsl(39, 67%, 69%);
+}
+
+.com {
+  color: hsl(207, 1%, 60%);
+}
+
+/** Layout Fix **/
+nav {
+	left: 0;
+	padding-left: 25px;
+}
